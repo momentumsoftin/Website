@@ -10,8 +10,8 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "products",
+    title: "Products",
   },
   {
     id: "clients",
@@ -193,5 +193,44 @@ export const clients = [
   {
     id: "client-4",
     logo: dropbox,
+  },
+];
+
+export const products = [
+  {
+    id: "product-1",
+    icon: star, // Replace with your actual icon
+    title: "Inventory management",
+    content: "Streamline your stock, track inventory, and manage orders with ease.",
+  },
+  {
+    id: "product-2",
+    icon: shield, // Replace with your actual icon
+    title: "Virtual HR",
+    content: "A comprehensive solution for managing your workforce and HR processes.",
+  },
+  {
+    id: "product-3",
+    icon: send, // Replace with your actual icon
+    title: "Customer connect",
+    content: "Build stronger customer relationships with our integrated CRM tools.",
+  },
+  {
+    id: "product-4",
+    icon: star, // Replace with your actual icon
+    title: "Automated travel expenses",
+    content: "Simplify expense reporting and reimbursement for your entire team.",
+  },
+  {
+    id: "product-5",
+    icon: shield, // Replace with your actual icon
+    title: "AI based performance appraisal",
+    content: "Leverage AI to conduct fair, insightful, and efficient performance reviews.",
+  },
+  {
+    id: "product-6",
+    icon: send, // Replace with your actual icon
+    title: "Payroll management",
+    content: "Ensure accurate and timely payroll processing every single time.",
   },
 ];
