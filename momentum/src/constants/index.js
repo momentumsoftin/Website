@@ -1,4 +1,11 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance,
+coinbase, dropbox, send, shield, star, iconCustomSoftware,
+  iconWebApp,
+  iconMobileApp,
+  iconQaTesting,
+  iconConsulting,
+  iconMaintenance,
+  iconResponsive,} from "../assets";
 
 export const navLinks = [
   {
@@ -18,7 +25,50 @@ export const navLinks = [
     title: "Clients",
   },
 ];
-
+export const services = [
+  {
+    id: "service-1",
+    icon: iconCustomSoftware, // Replaced
+    title: "Custom Software Development",
+    content: "We build tailored software solutions to meet your specific business needs and objectives.",
+  },
+  {
+    id: "service-2",
+    icon: iconWebApp, // Replaced
+    title: "Web Application Development",
+    content: "Creating dynamic, responsive, and scalable web applications for a seamless user experience.",
+  },
+  {
+    id: "service-3",
+    icon: iconMobileApp, // Replaced
+    title: "Mobile Application Development",
+    content: "Developing high-performance native and cross-platform mobile apps for iOS and Android.",
+  },
+  {
+    id: "service-4",
+    icon: iconQaTesting, // Replaced
+    title: "Q/A Testing",
+    content: "Rigorous quality assurance and testing to ensure your software is bug-free and reliable.",
+  },
+  {
+    id: "service-5",
+    icon: iconConsulting, // Replaced
+    title: "Technology Consulting",
+    content: "Our experts provide strategic guidance to help you leverage the right technology for your goals.",
+  },
+  {
+    id: "service-6",
+    icon: iconMaintenance, // Replaced
+    title: "Maintenance & Support",
+    content: "Ongoing support and maintenance to ensure your applications are always running smoothly.",
+  },
+  {
+    id: "service-7",
+    icon: iconResponsive, // Replaced
+    title: "Responsive Web Development",
+    content: "Building websites that deliver a perfect user experience on any device, from desktop to mobile.",
+  },
+];
 export const features = [
   {
     id: "feature-1",

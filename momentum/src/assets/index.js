@@ -23,6 +23,13 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import iconCustomSoftware from './icon_custom_software.svg';
+import iconWebApp from './icon_web_app.svg';
+import iconMobileApp from './icon_mobile_app.svg';
+import iconQaTesting from './icon_qa_testing.svg';
+import iconConsulting from './icon_consulting.svg';
+import iconMaintenance from './icon_maintenance.svg';
+import iconResponsive from './icon_responsive.svg';
 
 export {
   airbnb,
@@ -50,4 +57,11 @@ export {
   people01,
   people02,
   people03,
+  iconCustomSoftware,
+  iconWebApp,
+  iconMobileApp,
+  iconQaTesting,
+  iconConsulting,
+  iconMaintenance,
+  iconResponsive,
 };
