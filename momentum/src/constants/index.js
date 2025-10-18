@@ -6,6 +6,9 @@ coinbase, dropbox, send, shield, star, iconCustomSoftware,
   iconConsulting,
   iconMaintenance,
   iconResponsive,} from "../assets";
+import { BsBoxes, BsBriefcaseFill } from 'react-icons/bs';
+import { FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
+import { MdOutlineReceiptLong, MdOutlineQueryStats } from 'react-icons/md';
 
 export const navLinks = [
   {
@@ -250,7 +253,7 @@ export const roles = [
     icon: "Palette",
     title: "UX Designer",
     exp: "3+ Years Experience",
-    desc: "We’re seeking a UX Designer who can transform complex ideas into simple, delightful experiences for mobile and web apps. You’ll work with developers, product owners, and creative teams to build seamless digital journeys.",
+    desc: "We’re seeking a UX Designer who can transform complex ideas into simple, delightful experiences for mobile and web apps.You’ll work with developers, product owners, and creative teams to build seamless digital journeys.",
     points: [
       "Conduct user research and create wireframes, prototypes, and final UI designs.",
       "Collaborate with developers to ensure design accuracy and usability.",
@@ -287,39 +290,38 @@ export const roles = [
 export const products = [
   {
     id: "product-1",
-    icon: star, // Replace with your actual icon
+    icon: BsBoxes, // Was: star
     title: "Inventory management",
     content: "Streamline your stock, track inventory, and manage orders with ease.",
   },
   {
     id: "product-2",
-    icon: shield, // Replace with your actual icon
+    icon: BsBriefcaseFill, // Was: shield (or check)
     title: "Virtual HR",
     content: "A comprehensive solution for managing your workforce and HR processes.",
   },
   {
     id: "product-3",
-    icon: send, // Replace with your actual icon
+    icon: FaUserFriends, // Was: send
     title: "Customer connect",
     content: "Build stronger customer relationships with our integrated CRM tools.",
   },
   {
     id: "product-4",
-    icon: star, // Replace with your actual icon
+    icon: MdOutlineReceiptLong, // Was: star
     title: "Automated travel expenses",
     content: "Simplify expense reporting and reimbursement for your entire team.",
   },
   {
     id: "product-5",
-    icon: shield, // Replace with your actual icon
+    icon: MdOutlineQueryStats, // Was: shield (or check)
     title: "AI based performance appraisal",
     content: "Leverage AI to conduct fair, insightful, and efficient performance reviews.",
   },
   {
     id: "product-6",
-    icon: send, // Replace with your actual icon
+    icon: FaMoneyBillWave, // Was: send
     title: "Payroll management",
     content: "Ensure accurate and timely payroll processing every single time.",
   },
-  
 ];
