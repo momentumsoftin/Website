@@ -1,13 +1,21 @@
+// app.jsx
+
 import styles from "./style";
-import { Billing, Business, CardDeal, Client, CTA, Footer, Navbar, Stats, Testimonials, Hero,Products, Services } from "./component";
+// Ensure 'Careers' is imported from your component barrel file (index.js)
+import { Billing, Business, CardDeal, Client, CTA, Footer, Navbar, Stats, Testimonials, Hero, Products, Services, Careers } from "./component";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+  // 1. "overflow-hidden" has been REMOVED from this line
+  <div className="bg-primary w-full"> 
+    
+    {/* 2. Added "bg-primary", "sticky", "top-0", and "z-50" to this wrapper div */}
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} sticky top-0 z-50`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
+
+    {/* --- NO OTHER CHANGES BELOW THIS LINE --- */}
 
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
@@ -27,6 +35,7 @@ const App = () => (
 
         <Products />
         <Services />
+        <Careers /> {/* Correctly added the Careers component here */}
         <Footer />
       </div>
     </div>

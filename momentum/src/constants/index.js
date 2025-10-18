@@ -13,16 +13,16 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
-  },
-  {
     id: "products",
     title: "Products",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "services",
+    title: "Services",
+  },
+  {
+    id: "careers",
+    title: "Careers",
   },
 ];
 export const services = [
@@ -245,7 +245,45 @@ export const clients = [
     logo: dropbox,
   },
 ];
-
+export const roles = [
+  {
+    icon: "Palette",
+    title: "UX Designer",
+    exp: "3+ Years Experience",
+    desc: "We’re seeking a UX Designer who can transform complex ideas into simple, delightful experiences for mobile and web apps. You’ll work with developers, product owners, and creative teams to build seamless digital journeys.",
+    points: [
+      "Conduct user research and create wireframes, prototypes, and final UI designs.",
+      "Collaborate with developers to ensure design accuracy and usability.",
+      "Maintain consistency through design systems and accessibility standards.",
+      "Proficiency in Figma, Sketch, or Adobe XD is a must.",
+    ],
+  },
+  {
+    icon: "Cpu",
+    title: "Python Developer",
+    exp: "2–4 Years Experience",
+    desc: "Join our backend team to design, develop, and maintain Python-based applications and APIs. You’ll build scalable, secure systems that power our products and client solutions.",
+    points: [
+      "Hands-on experience with Django, Flask, or FastAPI.",
+      "Write efficient, testable, and reusable code.",
+      "Work with RESTful APIs, databases, and cloud environments.",
+      "Collaborate with designers and PMs to deliver product features.",
+    ],
+  },
+  {
+    icon: "Rocket",
+    title: "AI Developer",
+    exp: "2-4 Years Experience",
+    desc: "We're expanding our innovation wing — looking for an AI Developer passionate about transforming ideas into intelligent, data-driven products. You’ll develop smart systems that enhance business outcomes and user experiences.",
+    points: [
+      "Develop and deploy AI/ML models for real-world applications.",
+      "Experience with Python ML libraries (TensorFlow, PyTorch, scikit-learn).",
+      "Work with cross-functional teams to integrate AI features into apps.",
+      "Strong understanding of data preprocessing and model optimization.",
+    ],
+    marketing: "Be part of MomentumSoft s future-forward AI team — where creativity meets intelligence.",
+  },
+];
 export const products = [
   {
     id: "product-1",
@@ -283,4 +321,5 @@ export const products = [
     title: "Payroll management",
     content: "Ensure accurate and timely payroll processing every single time.",
   },
+  
 ];
