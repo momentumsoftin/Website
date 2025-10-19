@@ -31,6 +31,7 @@ import iconConsulting from './icon_consulting.svg';
 import iconMaintenance from './icon_maintenance.svg';
 import iconResponsive from './icon_responsive.svg';
 import yogesh from './yogesh.png';
+import devesh from './devesh.png';
 export {
   airbnb,
   bill,
@@ -65,4 +66,5 @@ export {
   iconMaintenance,
   iconResponsive,
   yogesh,
+  devesh,
 };

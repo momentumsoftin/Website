@@ -5,7 +5,8 @@ coinbase, dropbox, send, shield, star, iconCustomSoftware,
   iconQaTesting,
   iconConsulting,
   iconMaintenance,
-  iconResponsive,yogesh} from "../assets";
+  iconResponsive,yogesh,
+  devesh} from "../assets";
 import { BsBoxes, BsBriefcaseFill } from 'react-icons/bs';
 import { FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
 import { MdOutlineReceiptLong, MdOutlineQueryStats } from 'react-icons/md';
@@ -104,16 +105,23 @@ export const leadershipTeam = [
   
   {
     name: 'Mr. Devesh Pradhan',
-    title: 'Chief Operating Officer, AutoNexHub',
-    imageUrl: yogesh ,
-    bio: '',
-    imagePosition: 'right',
+    title: 'Chief Operating Officer, MomentumSoft',
+    imageUrl: devesh ,
+    bio: `-“I believe great technology should feel invisible—secure, scalable, and built to empower. That's the standard we deliver,everytime ”  With over 23 years of experience in engineering leadership and enterprise delivery, Devesh has helped global clients—from Fortune 500s to fast \
+    growing innovators build secure, scalable platforms that truly work for their business. Before launching this venture, Devesh held senior roles at IBM and Happiest Minds, where he led cloud transformations, modernized legacy systems, and built high-performing teams across the US,\
+     UK, Philippines, and India. He's known for blending deep technical insight with a sharp understanding of business priorities. At heart, Devesh is a builder of systems, teams, and long term client partnerships
+    . His leadership is rooted in clarity, trust, and a relentless focus on delivering results that matter.`,
+    imagePosition: 'left',
   },
   {
     name: 'Mr. Yogesh Pradhan',
     title: 'Chief Operating Officer,MomentumSoft',
     imageUrl: yogesh ,
-    bio: 'Mr. Yogesh Pradhan is a seasoned professional with 25+ years of experience in business development, sales, and marketing across automotive, electronics, and petroleum industries. With a proven track record in product management, P&L management, and strategic channel planning, he has held key roles at Tata Green Batteries, Reliance Industries, Bajaj Electricals Ltd, and Luminous Electronics. His leadership and strategic vision will be invaluable to our growth journey.',
+    bio: `- “Every solution we build starts with listening. Our success is measured by how confidently our clients can operate, scale, and grow with us by their side. ”Mr. Yogesh Pradhan is a seasoned professional with 25+ years of experience in business development, sales, and marketing across automotive, electronics, and petroleum industries.\
+     With a proven track record in product management, P&L management, and strategic channel planning, \
+     he has held key roles at Tata Green Batteries, Reliance Industries, Bajaj Electricals Ltd, and Luminous Electronics. \
+     His leadership and strategic vision will be invaluable to our growth journey.'`,
+
     imagePosition: 'right',
   },
 ];
@@ -274,7 +282,7 @@ export const roles = [
     icon: "Palette",
     title: "UX Designer",
     exp: "3+ Years Experience",
-    desc: "We’re seeking a UX Designer who can transform complex ideas into simple, delightful experiences for mobile and web apps.You’ll work with developers, product owners, and creative teams to build seamless digital journeys.",
+    desc: "We're seeking a UX Designer who can transform complex ideas into simple, delightful experiences for mobile and web apps.You'll work with developers, product owners, and creative teams to build seamless digital journeys.",
     points: [
       "Conduct user research and create wireframes, prototypes, and final UI designs.",
       "Collaborate with developers to ensure design accuracy and usability.",
@@ -286,7 +294,7 @@ export const roles = [
     icon: "Cpu",
     title: "Python Developer",
     exp: "2–4 Years Experience",
-    desc: "Join our backend team to design, develop, and maintain Python-based applications and APIs. You’ll build scalable, secure systems that power our products and client solutions.",
+    desc: "Join our backend team to design, develop, and maintain Python-based applications and APIs. You'll build scalable, secure systems that power our products and client solutions.",
     points: [
       "Hands-on experience with Django, Flask, or FastAPI.",
       "Write efficient, testable, and reusable code.",
@@ -298,7 +306,7 @@ export const roles = [
     icon: "Rocket",
     title: "AI Developer",
     exp: "2-4 Years Experience",
-    desc: "We're expanding our innovation wing — looking for an AI Developer passionate about transforming ideas into intelligent, data-driven products. You’ll develop smart systems that enhance business outcomes and user experiences.",
+    desc: "We're expanding our innovation wing — looking for an AI Developer passionate about transforming ideas into intelligent, data-driven products. You'll develop smart systems that enhance business outcomes and user experiences.",
     points: [
       "Develop and deploy AI/ML models for real-world applications.",
       "Experience with Python ML libraries (TensorFlow, PyTorch, scikit-learn).",
