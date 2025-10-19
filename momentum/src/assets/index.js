@@ -30,7 +30,7 @@ import iconQaTesting from './icon_qa_testing.svg';
 import iconConsulting from './icon_consulting.svg';
 import iconMaintenance from './icon_maintenance.svg';
 import iconResponsive from './icon_responsive.svg';
-
+import yogesh from './yogesh.png';
 export {
   airbnb,
   bill,
@@ -64,4 +64,5 @@ export {
   iconConsulting,
   iconMaintenance,
   iconResponsive,
+  yogesh,
 };

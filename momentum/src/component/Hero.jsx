@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { robot } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
           Business Intelligence
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Momentum is built by a team of seasoned sales leaders, senior developers, and project managers. 
+          MomentumSoft is built by a team of seasoned sales leaders, senior developers, and project managers. 
           We create powerful, intuitive software that transforms your raw data into clear, actionable insights.
         </p>
       </div>

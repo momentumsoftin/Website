@@ -5,7 +5,7 @@ coinbase, dropbox, send, shield, star, iconCustomSoftware,
   iconQaTesting,
   iconConsulting,
   iconMaintenance,
-  iconResponsive,} from "../assets";
+  iconResponsive,yogesh} from "../assets";
 import { BsBoxes, BsBriefcaseFill } from 'react-icons/bs';
 import { FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
 import { MdOutlineReceiptLong, MdOutlineQueryStats } from 'react-icons/md';
@@ -23,10 +23,15 @@ export const navLinks = [
     id: "services",
     title: "Services",
   },
+  
   {
     id: "careers",
     title: "Careers",
   },
+  {
+    id : "Leadership",
+    title: "Leadership",
+  }
 ];
 export const services = [
   {
@@ -95,7 +100,23 @@ export const features = [
       "Save hours every week. Schedule and automate reports to be sent directly to your team and stakeholders.",
   },
 ];
-
+export const leadershipTeam = [
+  
+  {
+    name: 'Mr. Devesh Pradhan',
+    title: 'Chief Operating Officer, AutoNexHub',
+    imageUrl: yogesh ,
+    bio: '',
+    imagePosition: 'right',
+  },
+  {
+    name: 'Mr. Yogesh Pradhan',
+    title: 'Chief Operating Officer,MomentumSoft',
+    imageUrl: yogesh ,
+    bio: 'Mr. Yogesh Pradhan is a seasoned professional with 25+ years of experience in business development, sales, and marketing across automotive, electronics, and petroleum industries. With a proven track record in product management, P&L management, and strategic channel planning, he has held key roles at Tata Green Batteries, Reliance Industries, Bajaj Electricals Ltd, and Luminous Electronics. His leadership and strategic vision will be invaluable to our growth journey.',
+    imagePosition: 'right',
+  },
+];
 export const feedback = [
   {
     id: "feedback-1",
@@ -284,7 +305,7 @@ export const roles = [
       "Work with cross-functional teams to integrate AI features into apps.",
       "Strong understanding of data preprocessing and model optimization.",
     ],
-    marketing: "Be part of MomentumSoft s future-forward AI team — where creativity meets intelligence.",
+    marketing: "Be part of MomentumSoft's future-forward AI team — where creativity meets intelligence.",
   },
 ];
 export const products = [

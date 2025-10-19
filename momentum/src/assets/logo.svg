@@ -1,10 +1,10 @@
-<svg width="124" height="32" viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .text { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: bold; fill: white; }
-    .shape { fill: #33BBCF; }
-  </style>
-  
-  <path class="shape" d="M21.2,12.3L15.3,16L9.4,9.7L15.3,6L21.2,12.3Z M16.2,17.7L10.3,21.4L4.4,15.1L10.3,11.4L16.2,17.7Z"/>
+<svg width="184" height="32" viewBox="0 0 210 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <style>
+  .text { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: bold; fill: white; }
+  .shape { fill: #33BBCF; }
+ </style>
+ 
+ <path class="shape" d="M21.2,12.3L15.3,16L9.4,9.7L15.3,6L21.2,12.3Z M16.2,17.7L10.3,21.4L4.4,15.1L10.3,11.4L16.2,17.7Z"/>
 
-  <text x="32" y="24" class="text">Momentum</text>
+ <text x="32" y="24" class="text">MomentumSoft</text>
 </svg>

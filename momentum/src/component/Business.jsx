@@ -26,7 +26,7 @@ const Business = () =>  (
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         With the right sales reporting tool, you can elevate your strategy,
-         forecast with accuracy, and empower your team. Move beyond spreadsheets and gain the momentum you need to close more deals.
+         forecast with accuracy, and empower your team. Move beyond spreadsheets and gain the momentumSoft you need to close more deals.
       </p>
 
       <Button styles={`mt-10`} />
