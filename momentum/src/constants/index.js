@@ -30,8 +30,12 @@ export const navLinks = [
     title: "Careers",
   },
   {
-    id: "/#leadership", // <-- Changed from "leadership"
+    id: "/#Leadership", // <-- Changed from "leadership"
     title: "Leadership",
+  },
+  {
+    id: "/blog", // <-- Changed from "leadership"
+    title: "Blog",
   },
 ];
 
