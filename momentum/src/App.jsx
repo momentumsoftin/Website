@@ -2,7 +2,7 @@
 
 import styles from "./style";
 // Ensure 'Careers' is imported from your component barrel file (index.js)
-import { Billing, Business, CardDeal, Client, CTA, Footer, Navbar, Stats, Testimonials, Hero, Products, Services, Careers, Leadership } from "./component";
+import {  Business, Footer, Navbar, Stats, Hero, Products, Services, Careers, Leadership } from "./component";
 
 const App = () => (
   // 1. "overflow-hidden" has been REMOVED from this line
@@ -26,13 +26,11 @@ const App = () => (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Stats />
-        <Business />
-
+        {/* <Business /> */}
         <Products />
         <Services />
         <Leadership/>
-        <Careers /> {/* Correctly added the Careers component here */}
-
+        <Careers /> 
         <Footer />
       </div>
     </div>

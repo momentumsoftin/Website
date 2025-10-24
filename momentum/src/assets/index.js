@@ -1,6 +1,4 @@
-import airbnb from "./airbnb.png";
-import bill from "./bill.png";
-import binance from "./binance.png";
+
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
@@ -33,9 +31,6 @@ import iconResponsive from './icon_responsive.svg';
 import yogesh from './yogesh.png';
 import devesh from './devesh.png';
 export {
-  airbnb,
-  bill,
-  binance,
   card,
   coinbase,
   dropbox,
