@@ -1,36 +1,35 @@
-// app.jsx
+// src/App.jsx
 
+import React from 'react';
 import styles from "./style";
-// Ensure 'Careers' is imported from your component barrel file (index.js)
-import {  Business, Footer, Navbar, Stats, Hero, Products, Services, Careers, Leadership } from "./component";
+import { Footer, Navbar } from "./component"; // Only import shared components
+import { Routes, Route } from "react-router-dom"; // Import the router
+
+// Import your new pages
+import HomePage from "./pages/HomePage";
+import BlogPage from "./pages/BlogPage";
+
 
 const App = () => (
-  // 1. "overflow-hidden" has been REMOVED from this line
   <div className="bg-primary w-full"> 
     
-    {/* 2. Added "bg-primary", "sticky", "top-0", and "z-50" to this wrapper div */}
+    {/* 1. NAVBAR (Always visible) */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} sticky top-0 z-50`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
 
-    {/* --- NO OTHER CHANGES BELOW THIS LINE --- */}
-
-    <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
+    {/* 2. DYNAMIC PAGE CONTENT */}
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      {/* Add other routes here, e.g., <Route path="/careers" element={<CareersPage />} /> */}
+    </Routes>
     
+    {/* 3. FOOTER (Always visible) */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats />
-        {/* <Business /> */}
-        <Products />
-        <Services />
-        <Leadership/>
-        <Careers /> 
         <Footer />
       </div>
     </div>

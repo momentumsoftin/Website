@@ -10,29 +10,32 @@ import { BsBoxes, BsBriefcaseFill } from 'react-icons/bs';
 import { FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
 import { MdOutlineReceiptLong, MdOutlineQueryStats } from 'react-icons/md';
 
+// src/constants/index.js
+
 export const navLinks = [
   {
-    id: "home",
+    id: "/",
     title: "Home",
   },
   {
-    id: "products",
+    id: "/#products", // <-- Changed from "products"
     title: "Products",
   },
   {
-    id: "services",
+    id: "/#services", // <-- Changed from "services"
     title: "Services",
   },
-  
   {
-    id: "careers",
+    id: "/#careers", // <-- Changed from "careers"
     title: "Careers",
   },
   {
-    id : "Leadership",
+    id: "/#leadership", // <-- Changed from "leadership"
     title: "Leadership",
-  }
+  },
 ];
+
+// ... rest of your constants
 export const services = [
   {
     id: "service-1",
@@ -222,7 +225,7 @@ export const footerLinks = [
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "/blog",
       },
       {
         name: "Newsletters",
