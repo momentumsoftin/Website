@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React from 'react';
 import styles from "./style";
 import { Footer, Navbar } from "./component"; // Only import shared components
