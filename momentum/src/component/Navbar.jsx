@@ -65,6 +65,13 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <a
+        href="/contact"
+        className="ml-4 inline-block px-4 py-2 bg-blue-600 text-white rounded"
+      >
+        Request Demo
+      </a>
+
     </nav>
   );
 };

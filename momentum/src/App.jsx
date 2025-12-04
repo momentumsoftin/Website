@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom"; // Import the router
 // Import your new pages
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
+import CookieBanner from "./component/CookieBanner";
+
 
 
 const App = () => (
@@ -24,7 +26,7 @@ const App = () => (
       <Route path="/blog" element={<BlogPage />} />
       {/* Add other routes here, e.g., <Route path="/careers" element={<CareersPage />} /> */}
     </Routes>
-    
+    <CookieBanner />    
     {/* 3. FOOTER (Always visible) */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
