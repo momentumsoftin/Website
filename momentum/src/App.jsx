@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import CookieBanner from "./components/CookieBanner";
 import Contact from "./pages/Contact";
+import ThankYou from "./pages/ThankYou";
 
 
 
@@ -27,6 +28,8 @@ const App = () => (
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/thank-you" element={<ThankYou />} />
+
       {/* Add other routes here, e.g., <Route path="/careers" element={<CareersPage />} /> */}
     </Routes>
     <CookieBanner />    
