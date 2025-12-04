@@ -51,6 +51,14 @@ export default function Contact() {
             >
               Submit Mail
             </button>
+            <button
+                type="button"
+                onClick={() => window.history.back()}
+                className="ml-4 px-4 py-2 bg-neutral-700 text-white rounded shadow"
+                >
+                Cancel
+            </button>
+
           </div>
         </form>
 
