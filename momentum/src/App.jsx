@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom"; // Import the router
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import CookieBanner from "./component/CookieBanner";
+import Contact from "./pages/Contact";
+
 
 
 
@@ -24,6 +26,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<BlogPage />} />
+      <Route path="/contact" element={<Contact />} />
       {/* Add other routes here, e.g., <Route path="/careers" element={<CareersPage />} /> */}
     </Routes>
     <CookieBanner />    
