@@ -1,7 +1,8 @@
 // src/pages/BlogPage.jsx
 import React from 'react';
 import './Blog.css'; // We will create this CSS file next
-import { ArticleHeader, ArticleSection, ArticleFooter } from '../component'; // Import your new components
+import { ArticleHeader, ArticleSection, ArticleFooter } from "../components";
+
 import styles from "../style"; // Import your styles
 // All your article data is now in one clean object
 const articleData = {

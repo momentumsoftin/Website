@@ -1,7 +1,7 @@
 // src/pages/HomePage.jsx
 import React from 'react';
 import styles from "../style"; // Note: path is now ../
-import { Business, Footer, Navbar, Stats, Hero, Products, Services, Careers, Leadership } from "../component"; // Note: path is now ../
+import { Business, Footer, Navbar, Stats, Hero, Products, Services, Careers, Leadership } from "../components"; // Note: path is now ../
 
 const HomePage = () => (
   <>

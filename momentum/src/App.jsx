@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from "./style";
-import { Footer, Navbar } from "./component"; // Only import shared components
+import { Footer, Navbar } from "./components"; // Only import shared components
 import { Routes, Route } from "react-router-dom"; // Import the router
 
 // Import your new pages
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
-import CookieBanner from "./component/CookieBanner";
+import CookieBanner from "./components/CookieBanner";
 import Contact from "./pages/Contact";
 
 
