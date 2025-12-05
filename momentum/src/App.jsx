@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom"; // Import the router
 // Import your new pages
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
-import CookieBanner from "./components/CookieBanner";
+import SiteConsentBanner from "./components/SiteConsentBanner";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
 
@@ -32,7 +32,7 @@ const App = () => (
 
       {/* Add other routes here, e.g., <Route path="/careers" element={<CareersPage />} /> */}
     </Routes>
-    <CookieBanner />    
+    <SiteConsentBanner />    
     {/* 3. FOOTER (Always visible) */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>

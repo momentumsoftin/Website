@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function CookieBanner() {
+export default function SiteConsentBanner() {
   const [show, setShow] = useState(false);
   useEffect(() => {
     if (!localStorage.getItem("ms_cookie")) setShow(true);
