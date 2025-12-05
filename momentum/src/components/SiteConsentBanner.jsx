@@ -3,13 +3,18 @@ import { useState, useEffect } from "react";
 import { initAnalytics, sendEvent } from "../lib/analytics";
 
 /**
- * Minimal consent banner with a small "Preferences" modal (Manage)
- * - Privacy link opens in a new tab
- * - Manage opens an inline modal where user can revoke consent
- * - Revoke clears consent and reloads the page (ensures analytics unloaded)
+ * SiteConsentBanner
+ * - Avoid showing on legal pages (/privacy, /terms)
+ * - Adds #ms-consent-banner and #ms-consent-preferences ids
+ * - Keeps give/revoke flow and analytics init
  */
-
 export default function SiteConsentBanner() {
+  // If we are on the legal pages, do not render the banner at all
+  if (typeof window !== "undefined") {
+    const p = window.location && window.location.pathname;
+    if (p === "/privacy" || p === "/terms") return null;
+  }
+
   const STORAGE_KEY = "ms_consent_v1";
   const [showBanner, setShowBanner] = useState(false);
   const [showPrefs, setShowPrefs] = useState(false);
@@ -18,17 +23,14 @@ export default function SiteConsentBanner() {
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (!stored) {
-      // show banner after slight delay to avoid hydration/adblock issues
       const timer = setTimeout(() => setShowBanner(true), 300);
       return () => clearTimeout(timer);
     } else {
-      // parse and set local state
       try {
         setConsentData(JSON.parse(stored));
       } catch {
         setConsentData({ v: 1, t: Date.now() });
       }
-      // init analytics for returning visitors
       initAnalytics().catch(() => {});
     }
   }, []);
@@ -42,7 +44,6 @@ export default function SiteConsentBanner() {
     return () => window.removeEventListener("keydown", handleEsc);
   }, [showBanner]);
 
-  // Accept consent
   const giveConsent = async () => {
     try {
       const payload = { v: 1, t: Date.now() };
@@ -57,25 +58,19 @@ export default function SiteConsentBanner() {
     }
   };
 
-  // Revoke consent (clear storage and reload to reset any in-memory trackers)
   const revokeConsent = () => {
     localStorage.removeItem(STORAGE_KEY);
-    // Reload so any in-memory analytics gets removed and the page resets
     window.location.reload();
   };
 
-  if (!showBanner && !showPrefs) return null;
-
   return (
     <>
-      {/* Banner */}
       {showBanner && (
         <div
           id="ms-consent-banner"
           className="fixed bottom-4 left-0 right-0 flex justify-center z-50 px-4 animate-fadeIn"
           role="dialog"
           aria-modal="true"
-          aria-label="Site preferences"
         >
           <div className="bg-white text-gray-900 p-4 sm:p-5 rounded-lg shadow-lg w-full max-w-2xl border border-gray-200 animate-slideUp">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -124,16 +119,13 @@ export default function SiteConsentBanner() {
         </div>
       )}
 
-      {/* Preferences Modal */}
       {showPrefs && (
         <div
           id="ms-consent-preferences"
           className="fixed inset-0 z-60 flex items-center justify-center bg-black/50 p-4"
           role="dialog"
           aria-modal="true"
-          aria-label="Site preferences panel"
           onClick={(e) => {
-            // close when clicking backdrop only
             if (e.target === e.currentTarget) setShowPrefs(false);
           }}
         >
@@ -142,8 +134,7 @@ export default function SiteConsentBanner() {
 
             <div className="mb-4 text-sm text-gray-700">
               <p className="mb-2">
-                <strong>Consent status:</strong>{" "}
-                {consentData ? "Given" : "Not given"}
+                <strong>Consent status:</strong> {consentData ? "Given" : "Not given"}
               </p>
               {consentData && (
                 <p className="text-xs text-gray-500">
@@ -176,7 +167,6 @@ export default function SiteConsentBanner() {
         </div>
       )}
 
-      {/* Local styles */}
       <style>{`
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { transform: translateY(10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
