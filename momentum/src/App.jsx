@@ -3,6 +3,9 @@ import styles from "./style";
 import { Footer, Navbar } from "./components";
 import { Routes, Route } from "react-router-dom";
 import { initAnalytics } from "./lib/analytics";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -40,6 +43,10 @@ const App = () => {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+
+
       </Routes>
 
       {/* CONSENT BANNER */}

@@ -1,5 +1,5 @@
 // src/lib/analytics.js
-const GA_ID = import.meta.env.VITE_GA_ID || ""; // set in Vercel/Netlify/Cloudflare env
+const GA_ID = "G-PT1X5X528M"; // later set in Vercel/Netlify/Cloudflare env
 
 function loadGtagScript() {
   if (!GA_ID) return Promise.reject(new Error("VITE_GA_ID not set"));

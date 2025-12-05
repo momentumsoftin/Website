@@ -190,25 +190,13 @@ export const footerLinks = [
   {
     title: "Useful Links",
     links: [
-      // {
-      //   name: "Content",
-      //   link: "https://www.hoobank.com/content/",
-      // },
-      // {
-      //   name: "How it Works",
-      //   link: "https://www.hoobank.com/how-it-works/",
-      // },
-      // {
-      //   name: "Create",
-      //   link: "https://www.hoobank.com/create/",
-      // },
-      // {
-      //   name: "Explore",
-      //   link: "https://www.hoobank.com/explore/",
-      // },
+       {
+        name: "Terms & Conditions",
+        link: "/terms",
+      },
       {
-        name: "Terms & Services",
-        link: "https://privacy.momentumsoft.in/",
+        name: "Privacy Policy",
+        link: "/privacy",
       },
     ],
   },
@@ -231,10 +219,6 @@ export const footerLinks = [
         name: "Blog",
         link: "/blog",
       },
-      // {
-      //   name: "Newsletters",
-      //   link: "https://www.hoobank.com/newsletters/",
-      // },
     ],
   },
   {
