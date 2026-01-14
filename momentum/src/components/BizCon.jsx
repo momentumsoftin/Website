@@ -33,9 +33,9 @@ const BizCon = () => (
                 </div>
             </div>
 
-            <button type="button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.momentumsoft.sales", "_blank")} className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none rounded-[10px] mt-10 hover:scale-105 transition-transform`}>
+            <a href="https://play.google.com/store/apps/details?id=com.momentumsoft.sales" target="_blank" rel="noopener noreferrer" className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none rounded-[10px] mt-10 hover:scale-105 transition-transform inline-block`}>
                 Download BizCon
-            </button>
+            </a>
         </div>
 
         <div className={layout.sectionImg}>

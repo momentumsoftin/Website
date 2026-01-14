@@ -13,7 +13,7 @@ const FeatureCard = ({ title, content, img, index, imgStyles }) => (
         </div>
 
         <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-            <img src={img} alt="billing" className={`${imgStyles || "w-[50%] h-[auto]"} relative z-[5] object-contain drop-shadow-2xl`} />
+            <img src={img} alt={title} className={`${imgStyles || "w-[50%] h-[auto]"} relative z-[5] object-contain drop-shadow-2xl`} />
             {/* Pink gradient specific for this section */}
             <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
         </div>
