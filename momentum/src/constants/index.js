@@ -1,11 +1,13 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter,  send, shield, star, iconCustomSoftware,
+import {
+  people01, people02, people03, facebook, instagram, linkedin, twitter, send, shield, star, iconCustomSoftware,
   iconWebApp,
   iconMobileApp,
   iconQaTesting,
   iconConsulting,
   iconMaintenance,
-  iconResponsive,yogesh,
-  devesh} from "../assets";
+  iconResponsive,
+  devesh
+} from "../assets";
 import { BsBoxes, BsBriefcaseFill } from 'react-icons/bs';
 import { FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
 import { MdOutlineReceiptLong, MdOutlineQueryStats } from 'react-icons/md';
@@ -108,32 +110,22 @@ export const features = [
   },
 ];
 export const leadershipTeam = [
-  
+
   {
     name: 'Mr. Devesh Pradhan',
     title: 'Chief Technology Officer, MomentumSoft',
-    imageUrl: devesh ,
+    imageUrl: devesh,
     bio: `-“I believe great technology should feel invisible—secure, scalable, and built to empower. That's the standard we deliver,everytime ”  With over 23 years of experience in engineering leadership and enterprise delivery, Devesh has helped global clients—from Fortune 500s to fast \
     growing innovators build secure, scalable platforms that truly work for their business. Before launching this venture, Devesh held senior roles at IBM and Happiest Minds, where he led cloud transformations, modernized legacy systems, and built high-performing teams across the US,\
      UK, Philippines, and India. He's known for blending deep technical insight with a sharp understanding of business priorities. At heart, Devesh is a builder of systems, teams, and long term client partnerships
     . His leadership is rooted in clarity, trust, and a relentless focus on delivering results that matter.`,
     imagePosition: 'left',
   },
-  {
-    name: 'Mr. Yogesh Pradhan',
-    title: 'Chief Operating Officer,MomentumSoft',
-    imageUrl: yogesh ,
-    bio: `- “Every solution we build starts with listening. Our success is measured by how confidently our clients can operate, scale, and grow with us by their side. ”Mr. Yogesh Pradhan is a seasoned professional with 25+ years of experience in business development, sales, and marketing across automotive, electronics, and petroleum industries.\
-     With a proven track record in product management, P&L management, and strategic channel planning, \
-     he has held key roles at Tata Green Batteries, Reliance Industries, Bajaj Electricals Ltd, and Luminous Electronics. \
-     His leadership and strategic vision will be invaluable to our growth journey.'`,
 
-    imagePosition: 'right',
-  },
   {
     name: 'Mrs. Sadhana Rai',
     title: 'Chief Human Resource Officer,MomentumSoft',
-    imageUrl: './sadhana.jpg' ,
+    imageUrl: './sadhana.jpg',
     bio: `- “Sadhana Rai is a visionary educationist renowned for her instrumental role in modernizing and innovating educational styles across diverse institutions both in India and internationally. With a strong academic foundation, holding an M.Sc. in Physics and Diploma Courses in Software Development,Her impact extends beyond Institution management and curriculum design; she has actively transformed the way student advocacy and education are approached across international borders. This dedication to borderless, 
 student-centric learning has defined her career.Future Vision: Building a Beneficiary Platform Leveraging her comprehensive experience and insights into global educational best practices, sadhna Rai is now focused on a new, ambitious goal: creating a powerful platform where society can benefit significantly from her expertise. This initiative aims to 
 utilize her knowledge in educational technology and global advocacy to deliver widespread social impact, further cementing her legacy as a forward-thinking leader in the world of education.'`,
@@ -190,7 +182,7 @@ export const footerLinks = [
   {
     title: "Useful Links",
     links: [
-       {
+      {
         name: "Terms & Conditions",
         link: "/terms",
       },
