@@ -28,6 +28,15 @@ import iconQaTesting from './icon_qa_testing.svg';
 import iconConsulting from './icon_consulting.svg';
 import iconMaintenance from './icon_maintenance.svg';
 import iconResponsive from './icon_responsive.svg';
+import bizcon_mockup from './bizcon_mockup.png';
+import bizcon_hub from './bizcon_hub.png';
+import bizcon_growth from './bizcon_growth.png';
+import bizcon_actuals from './bizcon_actuals.png';
+import feature_visit_entry from './feature_visit_entry.png';
+import feature_payment from './feature_payment.png';
+import feature_visit_dashboard from './feature_visit_dashboard.png';
+import feature_analytics from './feature_analytics.png';
+import youtube from './youtube.svg';
 import devesh from './devesh.png';
 export {
   card,
@@ -59,5 +68,14 @@ export {
   iconConsulting,
   iconMaintenance,
   iconResponsive,
+  bizcon_mockup,
+  bizcon_hub,
+  bizcon_growth,
+  bizcon_actuals,
+  feature_visit_entry,
+  feature_payment,
+  feature_visit_dashboard,
+  feature_analytics,
+  youtube,
   devesh,
 };

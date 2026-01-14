@@ -6,9 +6,10 @@ import {
   iconConsulting,
   iconMaintenance,
   iconResponsive,
+  youtube,
   devesh
 } from "../assets";
-import { BsBoxes, BsBriefcaseFill } from 'react-icons/bs';
+import { BsBoxes, BsBriefcaseFill, BsPhone } from 'react-icons/bs';
 import { FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
 import { MdOutlineReceiptLong, MdOutlineQueryStats } from 'react-icons/md';
 
@@ -232,22 +233,22 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/momentum_soft/",
   },
   {
     id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
+    icon: youtube,
+    link: "https://www.youtube.com/channel/UCmzgytPUJuaqutwf6XZYbzA",
   },
   {
     id: "social-media-3",
     icon: twitter,
-    link: "https://www.twitter.com/",
+    link: "https://x.com/momentumsoftIN",
   },
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/momentumsoftin",
   },
 ];
 
@@ -292,38 +293,32 @@ export const roles = [
 ];
 export const products = [
   {
+    id: "product-bizcon",
+    icon: BsPhone, // Using the dashboard icon or star
+    title: "BizCon - Field Sales CRM",
+    content: "Our flagship Offline-First CRM. Integrated with Field Connect, GrowthLens, and ExpenseEase for total field force empowerment.",
+  },
+  {
     id: "product-1",
-    icon: BsBoxes, // Was: star
+    icon: BsBoxes,
     title: "Inventory management",
     content: "Streamline your stock, track inventory, and manage orders with ease.",
   },
   {
     id: "product-2",
-    icon: BsBriefcaseFill, // Was: shield (or check)
+    icon: BsBriefcaseFill,
     title: "Virtual HR",
     content: "A comprehensive solution for managing your workforce and HR processes.",
   },
   {
-    id: "product-3",
-    icon: FaUserFriends, // Was: send
-    title: "Customer connect",
-    content: "Build stronger customer relationships with our integrated CRM tools.",
-  },
-  {
-    id: "product-4",
-    icon: MdOutlineReceiptLong, // Was: star
-    title: "Automated travel expenses",
-    content: "Simplify expense reporting and reimbursement for your entire team.",
-  },
-  {
     id: "product-5",
-    icon: MdOutlineQueryStats, // Was: shield (or check)
+    icon: MdOutlineQueryStats,
     title: "AI based performance appraisal",
     content: "Leverage AI to conduct fair, insightful, and efficient performance reviews.",
   },
   {
     id: "product-6",
-    icon: FaMoneyBillWave, // Was: send
+    icon: FaMoneyBillWave,
     title: "Payroll management",
     content: "Ensure accurate and timely payroll processing every single time.",
   },

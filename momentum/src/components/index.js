@@ -2,6 +2,8 @@ import Navbar from "./Navbar";
 import Business from "./Business";
 import Stats from "./Stats";
 import Footer from "./Footer";
+import BizCon from "./BizCon";
+import BizConFeatures from "./BizConFeatures";
 import Hero from "./Hero";
 import Products from "./Products";
 import Services from "./Services";
@@ -23,4 +25,6 @@ export {
   ArticleFooter,
   ArticleHeader,
   ArticleSection,
+  BizCon,
+  BizConFeatures
 };
