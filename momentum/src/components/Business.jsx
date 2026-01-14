@@ -5,7 +5,7 @@ import Button from "./Button";
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+      <img src={icon} alt={title} className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
@@ -18,7 +18,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const Business = () =>  (
+const Business = () => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
@@ -26,10 +26,13 @@ const Business = () =>  (
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         With the right sales reporting tool, you can elevate your strategy,
-         forecast with accuracy, and empower your team. Move beyond spreadsheets and gain the momentumSoft you need to close more deals.
+        forecast with accuracy, and empower your team. Move beyond spreadsheets and gain the momentumSoft you need to close more deals.
       </p>
 
-      <Button styles={`mt-10`} />
+      {/* Linking to BizCon section directly */}
+      <a href="#bizcon" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10 inline-block`}>
+        Get Started
+      </a>
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

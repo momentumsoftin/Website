@@ -8,7 +8,7 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
-          src={logo}  
+          src={logo}
           alt="hoobank"
           className="w-[266px] h-[72.14px] object-contain"
         />
@@ -27,13 +27,12 @@ const Footer = () => (
               {footerlink.links.map((link, index) => (
                 <li
                   key={link.name}
-                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
-                    index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
-                  }`}
+                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
+                    }`}
                 >
                   <Link to={link.link}> {/* <-- ADD THIS WRAPPER */}
-                      {link.name}
-                    </Link>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -49,15 +48,14 @@ const Footer = () => (
 
       <div className="flex flex-row md:mt-0 mt-6">
         {socialMedia.map((social, index) => (
-          <img
-            key={social.id}
-            src={social.icon}
-            alt={social.id}
-            className={`w-[21px] h-[21px] object-contain cursor-pointer ${
-              index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-            }`}
-            onClick={() => window.open(social.link)}
-          />
+          <a key={social.id} href={social.link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={social.icon}
+              alt={social.id}
+              className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
+                }`}
+            />
+          </a>
         ))}
       </div>
     </div>

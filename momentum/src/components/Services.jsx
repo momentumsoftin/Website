@@ -7,7 +7,7 @@ import styles from "../style";
 const FeatureCard = ({ icon, title, content }) => (
   <div className="flex flex-row p-6 rounded-[20px] feature-card">
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="icon" className="w-[50%] h-[50%] object-contain" />
+      <img src={icon} alt={title} className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
@@ -33,7 +33,7 @@ const Services = () => (
 
     {/* Two-Column Layout for Services */}
     <div className="w-full flex md:flex-row flex-col justify-center gap-8">
-      
+
       {/* Left Column (4 items) */}
       <div className="flex-1 flex flex-col gap-6">
         {services.slice(0, 4).map((service) => (
