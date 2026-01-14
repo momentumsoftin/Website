@@ -5,10 +5,12 @@ import { Routes, Route } from "react-router-dom";
 import { initAnalytics } from "./lib/analytics";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 // Pages
 import HomePage from "./pages/HomePage";
+import BlogIndex from "./pages/BlogIndex";
 import BlogPage from "./pages/BlogPage";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
@@ -38,9 +40,11 @@ const App = () => {
       </div>
 
       {/* PAGE CONTENT */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:slug" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/privacy" element={<Privacy />} />

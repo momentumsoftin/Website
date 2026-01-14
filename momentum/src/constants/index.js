@@ -191,39 +191,9 @@ export const footerLinks = [
         name: "Privacy Policy",
         link: "/privacy",
       },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "",
-      },
-      {
-        name: "Partners",
-        link: "",
-      },
-      {
-        name: "Suggestions",
-        link: "",
-      },
       {
         name: "Blog",
         link: "/blog",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "",
-      },
-      {
-        name: "Become a Partner",
-        link: "",
       },
     ],
   },
