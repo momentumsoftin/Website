@@ -1,0 +1,40 @@
+# Created by https://www.toptal.com/developers/gitignore/api/react,vite
+# Edit at https://www.toptal.com/developers/gitignore?templates=react,vite
+
+### React ###
+.env.local
+.env.*.local
+local.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/coverage
+node_modules
+build/
+dist/
+
+### Vite ###
+.vite/
+.vercel
+
+# End of https://www.toptal.com/developers/gitignore/api/react,vite
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
