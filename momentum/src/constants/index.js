@@ -111,18 +111,6 @@ export const features = [
   },
 ];
 export const leadershipTeam = [
-
-  {
-    name: 'Mr. Devesh Pradhan',
-    title: 'Chief Technology Officer, MomentumSoft',
-    imageUrl: devesh,
-    bio: `-“I believe great technology should feel invisible—secure, scalable, and built to empower. That's the standard we deliver,everytime ”  With over 23 years of experience in engineering leadership and enterprise delivery, Devesh has helped global clients—from Fortune 500s to fast \
-    growing innovators build secure, scalable platforms that truly work for their business. Before launching this venture, Devesh held senior roles at IBM and Happiest Minds, where he led cloud transformations, modernized legacy systems, and built high-performing teams across the US,\
-     UK, Philippines, and India. He's known for blending deep technical insight with a sharp understanding of business priorities. At heart, Devesh is a builder of systems, teams, and long term client partnerships
-    . His leadership is rooted in clarity, trust, and a relentless focus on delivering results that matter.`,
-    imagePosition: 'left',
-  },
-
   {
     name: 'Mrs. Sadhana Rai',
     title: 'Chief Human Resource Officer,MomentumSoft',
