@@ -14,7 +14,7 @@ Before pushing any changes, perform this rigorous audit. If any check fails, **S
 
 ## 3. Documentation Audit (Mandatory)
 *   [ ] **Knowledge Sync:** Did you add a new page or major component? If YES, you MUST update `KNOWLEDGE.md` at the repository root.
-*   [ ] **Protocol Sync:** Did your change alter how the marketing site interacts with user data? If YES, you MUST update the corresponding protocol documentation.
+*   [ ] **Protocol Sync:** Check if the changes made require an update to any existing protocol document in `docs/protocols/` (e.g., adding a DB column, API endpoint, or UI component). If YES, you MUST update the corresponding blueprint document before committing.
 
 ---
 **Verification Command (Example):**
